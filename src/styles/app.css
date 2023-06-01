@@ -1,87 +1,70 @@
-@import '../../../node_modules/normalize.css/normalize.css';
-
+@import url(../../../node_modules/normalize.css/normalize.css);
 @font-face {
   font-family: 'Roboto';
-  src: url('../fonts/Roboto.woff') format('woff'), url('../fonts/Roboto.woff2') format('woff2');
-}
+  src: url("../fonts/Roboto.woff") format("woff"), url("../fonts/Roboto.woff2") format("woff2"); }
 
 @font-face {
   font-family: 'Norse-Bold';
-  src: url('../fonts/Norse-Bold.otf');
-}
+  src: url("../fonts/Norse-Bold.otf"); }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   font-size: 1rem;
   width: 100%;
   min-height: 100vh;
-  font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans',
-    'Helvetica Neue', sans-serif;
-  background: #596e79;
-}
+  font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #596e79; }
 
 img {
   width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 li {
-  list-style: none;
-}
+  list-style: none; }
 
 button {
   border: none;
   outline: none;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .wrapper {
   display: grid;
   height: 100vh;
   grid-template-rows: 1fr;
-  grid-template-columns: 40% 1fr;
-}
+  grid-template-columns: 40% 1fr; }
 
 .aside {
   height: 100%;
-  background: url('../img/background.jpg') no-repeat;
+  background: url("../img/background.jpg") no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   display: flex;
-  flex-direction: column;
-  &__content {
+  flex-direction: column; }
+  .aside__content {
     flex: 1;
     display: flex;
     width: 100%;
     justify-content: center;
-    align-items: center;
-  }
-  &__footer {
+    align-items: center; }
+  .aside__footer {
     text-align: center;
     color: #f0ece2;
-    margin-bottom: 10px;
-  }
-  &__link {
+    margin-bottom: 10px; }
+  .aside__link {
     text-decoration: none;
     color: #f0ece2;
     text-transform: uppercase;
-    transition: color 0.3s ease-in-out;
-    &:hover,
-    &:active {
-      color: #bc2525;
-    }
-  }
-}
+    transition: color 0.3s ease-in-out; }
+    .aside__link:hover, .aside__link:active {
+      color: #bc2525; }
 
 .title-box {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-}
+  width: 100%; }
 
 .title {
   margin: 0;
@@ -90,17 +73,15 @@ button {
   color: #f0ece2;
   font-size: 5rem;
   margin-bottom: 40px;
-  text-transform: uppercase;
-  &::before {
+  text-transform: uppercase; }
+  .title::before {
     content: '';
     display: inline-block;
     width: 90px;
     height: 120px;
-    background: url('../img/odin-lined.png') no-repeat;
+    background: url("../img/odin-lined.png") no-repeat;
     background-size: auto;
     background-size: cover;
     position: relative;
     top: 30px;
-    right: 10px;
-  }
-}
+    right: 10px; }

@@ -6,15 +6,21 @@
     "type": "git",
     "url": "https://github.com/Pavel-nk95/odin-signup-form"
   },
+  "scripts": {
+    "sass": "node-sass -w -o ./src/styles/ ./src/styles/scss"
+  },
   "main": "",
   "devDependencies": {
     "htmlhint": "^1.1.4",
     "stylelint": "^15.2.0",
     "stylelint-config-standard": "^30.0.1",
     "stylelint-config-standard-scss": "^7.0.1",
-    "stylelint-scss": "^4.4.0",
-    "surge": "^0.23.1"
+    "stylelint-scss": "^4.4.0"
   },
   "author": "Pavel Nikonorov",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "normalize.css": "^8.0.1"
+  }
 }
