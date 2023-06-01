@@ -1,10 +1,10 @@
 {
-  "name": "html5-css-boilerplate",
+  "name": "Odin-signup-form",
   "version": "0.1.0",
-  "description": "HTML5/CSS Boilerplate with HTMLHint and StyleLint",
+  "description": "Training project within the course: 'Odin project' JavaScript fullstack developer",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hexlet-boilerplates/html-boilerplate.git"
+    "url": "https://github.com/Pavel-nk95/odin-signup-form"
   },
   "main": "",
   "devDependencies": {
@@ -15,6 +15,6 @@
     "stylelint-scss": "^4.4.0",
     "surge": "^0.23.1"
   },
-  "author": "Nikita Mikhaylov",
+  "author": "Pavel Nikonorov",
   "license": "ISC"
 }
