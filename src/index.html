@@ -1,40 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Signup-form</title>
-    <link rel="icon" href="./img/favicon.svg" sizes="any" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles/app.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="aside">
-        <div class="aside__content">
-          <div class="title-box">
-            <h1 class="title">SIGN-UP FORM</h1>
-          </div>
-        </div>
-        <div class="aside__footer">
-          <span class="aside__text"
-            >Photo by
-            <a
-              class="aside__link"
-              href="https://unsplash.com/@nathanael240606?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-              >Nathanaël Desmeules</a
-            >
-            on
-            <a
-              class="aside__link"
-              href="https://unsplash.com/photos/Nvvmuwm5hUw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-              >Unsplash</a
-            >
-          </span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Signup-form</title>
+  <link rel="icon" href="./img/favicon.svg" sizes="any" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles/app.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <section class="aside">
+      <div class="aside__content">
+        <div class="title-box">
+          <h1 class="title">SIGN-UP FORM</h1>
         </div>
       </div>
-      <div class="main-form"></div>
-    </div>
+      <div class="aside__footer">
+        <span class="aside__text">Photo by
+          <a class="aside__link"
+            href="https://unsplash.com/@nathanael240606?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathanaël
+            Desmeules</a>
+          on
+          <a class="aside__link"
+            href="https://unsplash.com/photos/Nvvmuwm5hUw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </span>
+      </div>
+    </section>
+    <section class="main-form">
+      <div class="main-form__wrapper">
+        <div class="main-form__head">
+          <p class="main-form__text">
+            This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Necessitatibus, commodi! Sign up now to get started.
+          </p>
+          <p class="main-form__text">You know you want to.</p>
+        </div>
+        <div class="main-form__content">
+          <form class="form" action="" method="post">
+            <h2 class="form__title">Let's do this!</h2>
+            <div class="form__inner">
+              <div class="form__item">
+                <label for="firstName">First name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Pavel" required/>
+              </div>
+              <div class="form__item">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Nk" />
+              </div>
+              <div class="form__item">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required/>
+              </div>
+              <div class="form__item">
+                <label for="phoneNumber">Phone number:</label>
+                <input type="number" id="phoneNumber" name="phoneNumber" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="123-456-7890" required/>
+              </div>
+              <div class="form__item">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Please enter a valid password" required/>
+              </div>
+              <div class="form__item">
+                <label for="confirmPassword">Confirm password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required/>
+              </div>
+            </div>
+            <button class="form__submit btn" type="submit">Create Account</button>
+          </form>
+          <div class="main-form__logIn">
+            <p>Already have an account?</p>
+            <a href="!#">Log in</a>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="../src/js/script.js"></script>
-  </body>
+</body>
+
 </html>
